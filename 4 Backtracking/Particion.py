@@ -1,3 +1,5 @@
+#Dado un vector con numeros v, devuelve los subconjuntos cuya suma sean iguales de ambos lados
+
 def ParticionRec(v, s, e):
     for i in range(2):
         s[e] = i
@@ -9,7 +11,7 @@ def ParticionRec(v, s, e):
                     s1 += v[j]
                 else:
                     s2 += v[j]
-            if s1 == s2:
+            if s1 == s2: #Condicion de printeo
                 print(s)
         else:
             ParticionRec(v, s, e+1)

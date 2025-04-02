@@ -1,3 +1,5 @@
+#Algoritmo que mediante un parametro m, te devuelve los subconjuntos cuya suma sea igual a m
+
 def SubSetSum(v,actSol, m, etapa, actSum):
     for i in range(2):
         actSol[etapa] = i
@@ -12,7 +14,7 @@ def SubSetSum(v,actSol, m, etapa, actSum):
 
 
 v = [3, 34, 4, 12, 5, 2]
-m = 34
+m = 6
 actSol = [0] * len(v)
 print(f"Subconjuntos que suman {m}:")
 SubSetSum(v, actSol, m, 0, 0)

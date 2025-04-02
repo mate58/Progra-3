@@ -1,3 +1,5 @@
+#Dado un numero n, devuelve todas las posibles combinaciones de 0 a n numeros
+
 def permutaciones(n, sol, usados):
     if len(sol) == n:
         print(sol)
